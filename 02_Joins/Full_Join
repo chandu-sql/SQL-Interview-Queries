@@ -1,0 +1,16 @@
+/*
+====================================================
+FULL OUTER JOIN
+====================================================
+
+Problem:
+Retrieve all employees and all departments.
+
+*/
+
+SELECT
+    E.EmployeeName,
+    D.DepartmentName
+FROM Employee E
+FULL OUTER JOIN Department D
+ON E.DepartmentID = D.DepartmentID;
