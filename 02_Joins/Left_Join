@@ -1,0 +1,17 @@
+/*
+====================================================
+LEFT JOIN
+====================================================
+
+Problem:
+Retrieve all employees including those without a department.
+
+*/
+
+SELECT
+    E.EmployeeID,
+    E.EmployeeName,
+    D.DepartmentName
+FROM Employee E
+LEFT JOIN Department D
+ON E.DepartmentID = D.DepartmentID;
