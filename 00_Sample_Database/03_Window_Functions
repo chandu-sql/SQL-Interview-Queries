@@ -1,0 +1,15 @@
+/*
+====================================================
+ROW_NUMBER
+====================================================
+
+Problem:
+Assign row numbers based on salary.
+
+*/
+
+SELECT
+    EmployeeName,
+    Salary,
+    ROW_NUMBER() OVER(ORDER BY Salary DESC) AS RowNum
+FROM Employee;
