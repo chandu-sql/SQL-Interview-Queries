@@ -1,0 +1,16 @@
+/*
+====================================================
+RIGHT JOIN
+====================================================
+
+Problem:
+Retrieve all departments including departments without employees.
+
+*/
+
+SELECT
+    E.EmployeeName,
+    D.DepartmentName
+FROM Employee E
+RIGHT JOIN Department D
+ON E.DepartmentID = D.DepartmentID;
