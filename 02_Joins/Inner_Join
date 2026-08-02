@@ -1,0 +1,21 @@
+/*
+====================================================
+INNER JOIN
+====================================================
+
+Problem:
+Retrieve employee names along with their department names.
+
+Tables:
+Employee(EmployeeID, EmployeeName, DepartmentID)
+Department(DepartmentID, DepartmentName)
+
+*/
+
+SELECT
+    E.EmployeeID,
+    E.EmployeeName,
+    D.DepartmentName
+FROM Employee E
+INNER JOIN Department D
+ON E.DepartmentID = D.DepartmentID;
