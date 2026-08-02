@@ -1,0 +1,19 @@
+/*
+====================================================
+SELF JOIN
+====================================================
+
+Problem:
+Display employees along with their managers.
+
+Table:
+Employee(EmployeeID, EmployeeName, ManagerID)
+
+*/
+
+SELECT
+    E.EmployeeName AS Employee,
+    M.EmployeeName AS Manager
+FROM Employee E
+LEFT JOIN Employee M
+ON E.ManagerID = M.EmployeeID;
